@@ -289,21 +289,83 @@
 
 // *********** NUMBER GUESSING NAME
 
-const answer = Math.floor(Math.random() * 10 + 1);
-let guesses = 0;
+// const answer = Math.floor(Math.random() * 10 + 1);
+// let guesses = 0;
 
-document.getElementById("submitButtonNum").onclick = function () {
-  let guess = document.getElementById("guessField").value;
-  guesses += 1;
+// document.getElementById("submitButtonNum").onclick = function () {
+//   let guess = document.getElementById("guessField").value;
+//   guesses += 1;
 
-  if (guess == answer) {
-    alert(`${answer} is the #. It took you ${guesses} guesses`);
-  } else if (guess < answer) {
-    alert("Too Small");
-  } else {
-    alert("Too Large");
-  }
-  console.log(guess);
-};
+//   if (guess == answer) {
+//     alert(`${answer} is the #. It took you ${guesses} guesses`);
+//   } else if (guess < answer) {
+//     alert("Too Small");
+//   } else {
+//     alert("Too Large");
+//   }
+//   console.log(guess);
+// };
+
+// ------------------------------------------------------------------------
+
+// *********** TEMPERATURE CONVERSION PROJECT
+
+// document.getElementById("submitButtonTemp").onclick = function () {
+//   let temp;
+//   if (document.getElementById("cButton").checked) {
+//     temp = document.getElementById("textBox").value;
+//     temp = Number(temp);
+//     temp = toCelsius(temp);
+
+//     document.getElementById("tempLabel").innerHTML = temp;
+//   } else if (document.getElementById("fButton").checked) {
+//     temp = document.getElementById("textBox").value;
+//     temp = Number(temp);
+//     temp = toFahrenheit(temp);
+
+//     document.getElementById("tempLabel").innerHTML = temp;
+//   } else {
+//     document.getElementById("tempLabel").innerHTML = "Select a Unit";
+//   }
+// };
+
+// function toCelsius(temp) {
+//   return (temp - 32) * (5 / 9);
+// }
+
+// function toFahrenheit(temp) {
+//   return (temp * 9) / 5 + 32;
+// }
+
+// ------------------------------------------------------------------------
+
+// *********** ARRAYS
+// array = think of it as a variable
+//         that can store multiple values
+
+// let fruit = ""
+
+// =++++++ LOOP TROUGHT AN ARRAY
+
+// let prices = [5, 10, 12, 44];
+
+// // for (let i = 0; i < prices.length; i++) {
+// //   console.log(prices[i]);
+// // }
+
+// for (let price of prices) {
+//   console.log(price);
+// }
+
+// ++++++ SORT AN ARRAY
+
+// let fruits = ["banana", "apple", "orange", "mango"];
+
+// // fruits = fruits.sort();
+// fruits = fruits.reverse();
+
+// for (let fruit of fruits) {
+//   console.log(fruit);
+// }
 
 // ------------------------------------------------------------------------
